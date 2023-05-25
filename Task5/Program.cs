@@ -2,9 +2,10 @@
 // 4-> "-4. -3, -2, -1, 0, 1, 2, 3, 4"
 // 2-> "-2, -1, 0, 1, 2"
 
-// Console.WriteLine("Введите число");
-// int number = Convert.ToInt32(Console.ReadLine());
-// int count = -number; //начало перечисления, т.е. отрицательное число
-// while (count <= number)
-// {Console.WriteLine(count+" ");}
-// count = count+1;
+Console.WriteLine("Введите число");
+int n = Convert.ToInt32(Console.ReadLine());
+int last = Math.Abs(n); //начало перечисления, т.е. отрицательное число
+for (int i = -last; i <= last; i++)
+{
+Console.Write(i + " ");
+}
